@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DS_Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aacc8f1f-8a54-46e8-b982-322785822b8d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Deposit_Scheme"/>
+	<parameter name="Consumer_Application_No" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+    cad.consumer_application_number AS applicatinno,
+    con.consumer_name               AS consumername,
+    con.address                     AS address,
+    cad.short_description_of_work   AS sortdescription,
+    dc.dc_name                      AS distributionname,
+    sd.sub_division                 AS subdivision,
+    div.division                    AS divisionname,
+    cir.circle                      AS circlename,
+    cd.company_name                 AS contractorname,
+    cd.user_class                   AS classtype
+FROM
+    consumer_application_detail cad
+    LEFT JOIN consumer                    con ON cad.consumer_id = con.consumer_id
+    LEFT JOIN distribution_center         dc ON cad.dc_id = dc.dc_id
+    LEFT JOIN sub_division                sd ON dc.subdiv_id = sd.subdiv_id
+    LEFT JOIN division                    div ON sd.division_id = div.div_id
+    LEFT JOIN circle                      cir ON div.circle_id = cir.circle_id
+    LEFT JOIN contractor_detail           cd ON cad.contractor_id = cd.contractor_id
+WHERE
+    cad.consumer_application_number = $P{Consumer_Application_No} ]]>
+	</queryString>
+	<field name="APPLICATINNO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="APPLICATINNO"/>
+		<property name="com.jaspersoft.studio.field.label" value="APPLICATINNO"/>
+	</field>
+	<field name="CONSUMERNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CONSUMERNAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="CONSUMERNAME"/>
+	</field>
+	<field name="ADDRESS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ADDRESS"/>
+		<property name="com.jaspersoft.studio.field.label" value="ADDRESS"/>
+	</field>
+	<field name="SORTDESCRIPTION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SORTDESCRIPTION"/>
+		<property name="com.jaspersoft.studio.field.label" value="SORTDESCRIPTION"/>
+	</field>
+	<field name="DISTRIBUTIONNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DISTRIBUTIONNAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="DISTRIBUTIONNAME"/>
+	</field>
+	<field name="SUBDIVISION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SUBDIVISION"/>
+		<property name="com.jaspersoft.studio.field.label" value="SUBDIVISION"/>
+	</field>
+	<field name="DIVISIONNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DIVISIONNAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="DIVISIONNAME"/>
+	</field>
+	<field name="CIRCLENAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CIRCLENAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="CIRCLENAME"/>
+	</field>
+	<field name="CONTRACTORNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CONTRACTORNAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="CONTRACTORNAME"/>
+	</field>
+	<field name="CLASSTYPE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CLASSTYPE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CLASSTYPE"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="246" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="470" height="39" uuid="08ec18fa-6a09-4147-ab8a-06ce30f6cfde"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kruti Dev 010" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[e/;izns’k e/; {ks= fo|qr forj.k daiuh fyfeVsM 
+ ¼e/;izns’k ’kklu dk midze½ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="60" width="470" height="30" uuid="50945e5e-cb90-43cd-aed5-67afdba26f89"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Web site- portal.mpcz.in
+ CIN NUMBER:U40109MP2002SGC015119]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="91" width="552" height="1" uuid="fe2adeb0-e7f9-4a5f-a0ea-0d112a12b19f"/>
+			</line>
+			<staticText>
+				<reportElement x="230" y="39" width="210" height="20" uuid="fa76ea1f-75ef-47c9-b024-6e30365ccd3b"/>
+				<text><![CDATA[Division Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="195" width="550" height="39" uuid="b06c525d-948e-41f5-a275-b7bbf90a0a6d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="mangal" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[क्र. म.म.प्रं./संचा./संधा./2022-2023/			                           दिनांक. ]]></text>
+			</staticText>
+			<textField pattern="dd-MM-yyyy">
+				<reportElement x="481" y="207" width="71" height="19" uuid="2554593a-9d8a-41f8-9b8c-df00e13669a8"/>
+				<textElement verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-154" width="550" height="102" uuid="2f5465e6-82e1-4fe6-b993-afa0d919a9ac"/>
+				<textElement>
+					<font fontName="Noto Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ DSP आवेदन क्रम ांक
+ वृत क न म
+ सांभग क न म
+ fववतरण कें द्र क न म
+ प्र कलन क्रम ांक
+ कर्यप्रकर]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="-155" width="140" height="20" uuid="083501f9-ae7a-452f-a5eb-c5400228576f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{APPLICATINNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="-136" width="140" height="19" uuid="4867217f-8d3f-4543-b2b4-8ca252e10248"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CIRCLENAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="-116" width="140" height="20" uuid="ff11a582-e069-4c3c-a124-15eee12b8cb1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DIVISIONNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="-95" width="156" height="19" uuid="428a2ae4-983e-4394-b81a-cbeee89810f0"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DISTRIBUTIONNAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="601" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="40" width="60" height="19" uuid="2ad26087-e5c1-46d1-81d6-d78e4494d84d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="mangal" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[विषय]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="40" width="40" height="19" uuid="c4cf821a-9094-47ab-9b51-97ebe792d931"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="mangal" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[अंतर्गत  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="60" width="143" height="19" uuid="dd579249-64d1-407c-a946-fbf9ea3b40b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="mangal" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[कार्य अनुमति आदेश]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="79" width="110" height="19" uuid="7f72a247-b939-496e-af7a-624a6d59ada2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="mangal" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[महोदय, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="100" width="210" height="19" uuid="0432a4a1-9db4-4131-8254-643325e792da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="mangal" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[आपके उपरोक्त स्वीकृत संदर्भित प्राक्कलन  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="100" width="220" height="19" uuid="805f6985-5756-4522-93f3-83a4e5420092"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Noto Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[के अनुसार डिमांड नोट जमा करने पर कार्य क्यू.सी. पोर्टल पर]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="120" width="150" height="19" uuid="4d1a7bdb-917c-4f22-9173-3ae00551fef2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Noto Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[पंजीकृत एक्टिव कॉन्ट्रेक्ट श्रेणी  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="120" width="59" height="19" uuid="86097764-972e-4012-8456-abfffd278bcf"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Noto Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[अ’’ श्रेणी विद्युत ठेकेदार]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="140" width="439" height="19" uuid="e99667d2-5763-43c7-a362-fd5f3cb4aea2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Noto Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[द्वारा संपादित कराने की अनुमति आपको निम्नलिखित नियम/षर्तो पर प्रदान की जाती है:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="160" width="508" height="99" uuid="52a99789-da34-467d-9f8f-aaea40256bc1"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.	म.प्र. शासन, ऊर्जा विभाग का पत्र क्रमांक-5425/2012/तेरह/भोपाल दिनांक 17.10.2012 में दिये गये दिशा-निर्देश अनुसार केन्द्रीय विद्युत प्राधिकरण एवं ऊर्जा संरक्षण अधिनियम 2001 के अनुसार विद्युत उपकरण 	मानक स्तर के एवं ट्रांसफार्मर हल्का भूरा रंग का स्थापित करना सुनिश्चित करें, जिसका निर्माण केन्द्रीय विद्युत प्राधिकरण द्वारा निर्धारित स्पेसीफिकेशन के अनुसार ही हो।]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="259" width="507" height="71" uuid="76639180-affc-48d6-a68a-1a7b89aa1f99"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.	विद्युतीकरण का कार्य कार्यादेष के साथ संलग्न कम्पनी द्वारा स्वीकृत प्राक्कलन एवं विद्युत निरीक्षक म.प्र. षासन द्वारा अनुमोदित 33/11 के.व्ही. उपकेन्द्र का मानचित्र एवं केन्द्रीय व्द्यिुत प्राधिकरण द्वारा निर्धारित मापदण्ड के अनुसार सुरक्षित दूरी का ध्यान रखते हुए कराना होगा।]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="330" width="507" height="90" uuid="ddf7b809-adc1-4144-9513-9dd218ce40b4"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.	विद्युतीकरण कार्य में उपयोग की जाने वाली समस्त (अनुमोदित जी.टी.पी.की. के अनुसार) सामग्री कम्पनी द्वारा अनुमोदित निर्माताओं/सप्लायर से क्रय कर ही उपयोग की जाए एवं उपयोग में लाने से पूर्व इस कार्यालय के अधिकृत प्रतिनिधि उप महाप्रबंधक (एस.टी.सी.) से निरीक्षण करवाकर इसकी प्रति पोर्टल पर दर्ज करें।]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="420" width="507" height="90" uuid="621bb0ce-9b07-4179-ace6-454bb3850b91"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[5.	आपके द्वारा किये जा रहे कार्य के निरीक्षण हेतु कम्पनी के निदेषानुसार उप महाप्रबंधक (एस.टी.सी.) संभाग             को अधिकृत किया जाता है। अतः निर्माण कार्य की अवधि में कम्पनी के उप महाप्रबंधक (एस.टी.सी.) संभाग             से सतत् सम्पर्क बनाये रखे ताकि समय-समय पर कार्य की गुणवत्ता/उपयोग की जाने वाली सामग्री का निरीक्षण किया जा सकें। ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="510" width="507" height="91" uuid="8555d5a3-5dd4-4796-8b1d-d461f115751e"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[6.	विद्युतीकरण के कार्य मेें कम्पनी द्वारा स्वीकृत प्राक्कलन में उपयोग की गई सामग्री एवं प्राक्कलन राषि में 5 प्रतिषत से अधिक परिवर्तन होने पर/मानचित्र में किसी भी प्रकार का परिवर्तन होने पर, सक्षम कार्यालय से अनुमति/स्वीकृति प्राप्त कर पोर्टल पर दर्ज कराना आवष्यक होगा। अन्यथा की स्थिति में न तो कार्य स्वीकार किया जावेगा एवं न ही लाइन चालू की जाकर कनेक्षन दिया जावेगा। ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="120" width="138" height="18" uuid="1d086b13-cbdc-4ecd-8cfd-d14e5093a745">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03fec746-5f1c-4340-87cc-235c3bbd97bb"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CLASSTYPE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="119" width="170" height="19" uuid="eb431568-455d-49ac-aa5d-9b88729548d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df41b2ba-1ecf-4356-b8c5-b482803549bf"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CONSUMERNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="100" width="95" height="18" uuid="2fabd197-66a6-4691-b3e2-49aaf07aad6e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="45d4a1d5-126c-48e5-ab78-cd5e15732fbf"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{APPLICATINNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="148" height="19" uuid="9adbc731-64ac-43f0-97c2-63a00566990a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="22a1c96d-aa0e-4ebe-bc47-c1267059987b"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CONSUMERNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="19" width="147" height="19" uuid="cba651e3-06fc-4ed4-a245-78292ac2cf32">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eb694380-a09e-4f13-b723-8d14db7d90c5"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ADDRESS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="40" width="231" height="18" uuid="a9097c5e-2ef0-45cc-b30b-59e06076fe5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21ff09a0-3ed6-47e2-8306-6d7aa8905ca1"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SORTDESCRIPTION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="39" width="120" height="19" uuid="f5e05834-b4b9-4438-8e8e-4d63f6511b92">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="57aa27dd-f87b-4d66-927e-100e7683d024"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DIVISIONNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="40" width="98" height="19" uuid="cee414c9-1f7e-46b4-a5cb-2a78dfc4f90b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ddde5eb1-7c7d-4d1b-a75f-d12114ded9e7"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CIRCLENAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="443" width="75" height="18" uuid="65580acf-89d2-4a77-9f75-fb222cfcbdc4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f6ed068-5faa-4369-982a-6882dabca1b6"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CIRCLENAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="461" width="75" height="18" uuid="b6744eab-fee5-45be-a30f-3d62c62a6661">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f6ed068-5faa-4369-982a-6882dabca1b6"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CIRCLENAME}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="601">
+			<staticText>
+				<reportElement x="44" y="1" width="507" height="48" uuid="0d24ff03-79af-4f81-ac5b-f384edd94056"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[7.	विद्युतीकरण हेतु स्थापित ट्रांसफार्मर के चारों ओर फेंसिंग एवं सुरक्षा व्यवस्था कम्पनी के मापदण्डानुसार करानी होगी। ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="50" width="507" height="90" uuid="d02e21f9-3984-43ac-9f3b-2c7e23d9b902"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.	विद्युत लाईन षिफ्टिंग/विद्युतीकरण का कार्य पूर्ण होने के उपरांत कम्पनी के अधिकृत अधिकारी, आपके अधिकृत प्रतिनिधि एवं ठेकेदार द्वारा संयुक्त रूप से निरीक्षण कर यह निष्चित किया जावे कि, कार्य कम्पनी द्वारा स्वीकृत प्राक्कलन, अनुमोदित ले-आउट के अनुसार संपादित किया गया है एवं उपयोग की गई सामग्री की गुणवत्ता निर्धारित मापदण्ड अनुसार हैं। ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="140" width="507" height="250" uuid="fdbec23c-d3bb-4cd1-8aae-e5fbe49f5b81"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[9.	विद्युत लाईन षिफ्टिंग/विद्युतीकरण का कार्य पूर्ण होने के पश्चात कम्पनी द्वारा निर्धारित प्रष्नावधि प्रारूप में लाईन/ट्रांसर्फामर कम्पनी द्वारा ग्रहण करने की कार्यवाही हेतु आवष्यक दस्तावेज जैसे किः-
+		अ-	निर्धारित संयुक्त निरीक्षण रिपोर्ट
+		ब-	पोल षेडयूल जी.आई.एस. आधारित क्यू.सी. एप पर।
+              स-    क्वालिटी मेनुअल परिपत्र क्रंमाक 94 दिनांक 20.06.2022 के अनुसार सामग्री एवं  ट्रांसर्फामर के टेस्ट एवं गारन्टी प्रमाण पत्र		
+द-	विद्युत निरीक्षक म.प्र. षासन का अनुमति पत्र एवं निरीक्षण षुल्क जमा करने का चालान।
+इ-	निर्माण कार्य में उपयोग की गई सामग्री जैसे कि तार/पोल/इन्सूलेटर/ए.बी.स्विच/केवल एवं ;          (BIS level-III(Old)/BIS level-II (New) वितरण ट्रांसफार्मर इत्यादि के क्रय व्हाउचर की मूलप्रति से सत्यापित छायाप्रतियां प्रस्तुत करें।
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="390" width="507" height="70" uuid="0d3a84fa-1edb-49b7-b438-ecb98b56d97a"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[10.	विद्युतीकरण कार्य पूर्ण होने एवं लाईन चार्जिंग के उपरान्त स्वीकृत प्राक्कलन में दर्षाये गये भार से अधिक भार के विद्युत संयोजनों हेतु अतिरिक्त सिस्टम चार्ज/स्ट्रेथनिंग चार्ज का भुगतान अतिरिक्त  करना होगा। ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="460" width="507" height="70" uuid="e580eb70-8418-40fb-a8a5-bfbf6f8202e4"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[11.	कार्य विद्युत कम्पनी को हस्तांतरित होने के पष्चात् 02 वर्ष तक लाईन उपकरणों में किसी भी प्रकार की टूट-फूट नुकसान, ट्रांसफार्मर खराब होने पर उसे बदलना या सुधरवाने की जिम्मेदारी आपकी होगी। इस बाबत् निर्धारित स्टाम्प पर घोषणा पत्र प्रस्तुत करना होगा। ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="531" width="507" height="28" uuid="51ca2740-3795-4e81-9caf-a52264889c09"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[12.	एनर्जी ऑडिट हेतु मॉडम सहित सी.टी. मीटर लगाना अनिवार्य होगा। ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="560" width="507" height="40" uuid="f44a4490-1f3b-4533-bbe2-33704e860300"/>
+				<textElement>
+					<font fontName="mangal" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[13	33/11 के.व्ही. उपकेन्द्र, कैपेसीटर बैंक, वितरण ट्रांसफार्मर की अर्थिंग शेड़यूल ऑफ रेट़स के शेड़यूल ‘‘जी‘‘ के अनुसार की जावें। ]]></text>
+			</staticText>
+		</band>
+		<band height="481">
+			<staticText>
+				<reportElement x="43" y="0" width="507" height="470" uuid="d8cc49a7-7a62-441d-adef-068d6f86c7b4"/>
+				<textElement>
+					<font fontName="mangal" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[14.	प्राक्कलन के अनुसार निकली हुई पुरानी लाईन का तार/स्टील एवं अन्य सामग्री उप महाप्रबंधक(एस.टी’सी.) के माध्यम से क्षेत्रीय भण्डार में वापिस किया जाना सुनिष्चित् करें। 
+
+15.	उक्त विद्युतीकरण के कार्य का निधारित समयावधि  <.......Day...........> 
+16.	स्वीकृत प्राक्कलन की 24 माह की निर्धारित करेंसी अवधि में कार्य पूर्ण नही किये जाने की स्थिति में कार्यादेष स्वतः ही निरस्त माना जायेगा एवं पुनः आवेदन करने पर प्राक्कलन सक्षम अधिकारी की स्वीकृति पष्चात् समस्त औपचारिकताएं पूर्ण करने पर नियमानुसार संरचना के ऊर्जीकृत करने की अनुमति प्रदान की जा सकेगी। 
+
+17.	बिना प्रापर शट-डाउन किये कार्य किया हुआ पाया जाता है या लाईन जुड़ी हुई पाई जाती है तो विद्युत अधिनियम 2003 की धारा 138 के तहत् आपके विरुद्ध कार्यवाही की जावेगी। 
+
+18.   निर्माण कार्य/नवीन विद्युत लाईन/शिफ्टिंग कार्य एवं अन्य कार्य में आने वाली बाधाओं का निराकरण आपके स्वंय के स्तर पर कराया जावेंगा।
+
+	अतः आपसे अनुरोध है कि, समस्त कार्य ऊपर दर्षाये गये बिन्दुओं के अनुसार पूर्ण करें। कार्य में बिना अनुमति के किये गये परिवर्तन मान्य नहीं होगे एवं इससे उत्पन्न समस्त विवादों की जबावदारी आपकी की होगी। 
+						‘‘धन्यवाद’’
+संलग्न:- स्वीकृत प्राक्कलन। 
+                                                           उप महाप्रबंधक (संचा./संधा.)
+                                                             म.प्र.म.क्षे.वि.वि.कं.लि.   
+                                                           
+
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="445" width="119" height="19" uuid="86ebd2b3-1d4f-4e97-a0de-3c882c52e85a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cabde47e-d545-433c-ae20-27bed0796101"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DIVISIONNAME}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="293">
+			<staticText>
+				<reportElement x="0" y="1" width="548" height="48" uuid="c8140dfc-d1fa-4d81-a343-2d1ef0e48835"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="mangal" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[प्रतिलिपि:-
+1.	महाप्रबंधक (संचा./संधा.) म.प्र.म.क्षे.वि.वि.कं.लि                की ओर सूचनार्थ।
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="50" width="548" height="70" uuid="975db7a5-eac9-45a9-8669-9e03c429445c"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Mangal" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.उप महाप्रबंधक (एस.टी.सी.) म.प्र.म.क्षे.वि.वि.कं.लि.               की ओर सूचनार्थ एवं माननीय अध्यक्ष एवं प्रबंध
+ संचालक महोदय म.प्र.म.क्षे.वि.वि.कं.लि. भोपाल के पत्र क्रं. 688 दिनांक 26.09.09 के परिपालन में उपरोक्त कार्य 
+का नियमानुसार निरीक्षण/सुपरविजन करते हुए लाईन/ट्रांसफार्मर को चार्ज करने हेतु आवष्यक रिपोर्ट प्रेषित करंे।]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="270" y="25" width="90" height="19" uuid="7c0bd784-538c-4833-97bb-06cd87ef7cb5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85eabcdb-9322-4b54-bd31-f802edc38beb"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CIRCLENAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="50" width="78" height="19" uuid="17938bdc-ac9a-4020-990e-c7ba9e155963">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85eabcdb-9322-4b54-bd31-f802edc38beb"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CIRCLENAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="120" width="548" height="40" uuid="e1e09ccf-15c8-48ed-b255-fffbac7e2900"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Mangal" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. प्रबंधक/ सहायक प्रबंधक म.प्र.म.क्षे.वि.वि.कं.लि.                             की ओर सूचनार्थ एवं 
+आवष्यक कार्यवाही हेतु प्रेषित।  
+                                                                                                                                                                           ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="228" y="120" width="151" height="19" uuid="6d0cce39-f46d-4988-b237-f0eeea2182fd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{DISTRIBUTIONNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="235" y="160" width="315" height="70" uuid="46213886-6ae2-425b-88ae-7d3b3602820d"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Mangal" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                       उपमहाप्रबंधक       
+                       (संचा./संधा.)             
+                       म.प्र.म.क्षे.वि.वि.कं.लि       
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="320" y="230" width="210" height="30" uuid="41f43a76-0d2d-4ab9-b47a-7f0c1f5bd8cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DIVISIONNAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

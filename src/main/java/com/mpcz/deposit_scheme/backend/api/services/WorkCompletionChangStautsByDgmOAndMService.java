@@ -1,0 +1,11 @@
+package com.mpcz.deposit_scheme.backend.api.services;
+
+import com.mpcz.deposit_scheme.backend.api.domain.WorkCompletionChangStautsByDgmOAndM;
+import com.mpcz.deposit_scheme.backend.api.exception.ConsumerApplicationDetailException;
+import com.mpcz.deposit_scheme.backend.api.exception.ErpEstimateAmountException;
+
+public interface WorkCompletionChangStautsByDgmOAndMService {
+
+	WorkCompletionChangStautsByDgmOAndM saveAndChange(WorkCompletionChangStautsByDgmOAndM workCompletionChangStautsByDgmOAndM) throws ConsumerApplicationDetailException, ErpEstimateAmountException;
+
+}

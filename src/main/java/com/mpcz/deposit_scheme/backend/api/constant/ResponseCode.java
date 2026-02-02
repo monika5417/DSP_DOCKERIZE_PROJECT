@@ -1,0 +1,128 @@
+package com.mpcz.deposit_scheme.backend.api.constant;
+
+public interface ResponseCode {
+	// 1xx: Informational Codes
+	String DATA_NOT_FOUND = "100";
+	String SWITCHING_PROTOCOLS = "101";
+	String PROCESSING = "102";
+	// 2×× Success Codes
+	String OK = "200";
+	String CREATED = "201";
+	String ACCEPTED = "202";
+	String NON_AUTHORITATIVE_INFORMATION = "203";
+	String NO_CONTENT = "204";
+	String RESET_CONTENT = "205";
+	String PARTIAL_CONTENT = "206";
+	String MULTI_STATUS = "207";
+	String ALREADY_REPORTED = "208";
+	String IM_USED = "226";
+	// 3×× Redirection codes
+	String MULTIPLE_CHOICES = "300";
+	String MOVED_PERMANENTLY = "301";
+	String FOUND = "302";
+	String SEE_OTHER = "303";
+	String NOT_MODIFIED = "304";
+	String USE_PROXY = "305";
+	String TEMPORARY_REDIRECT = "307";
+	String PERMANENT_REDIRECT = "308";
+	// 4×× Client Error Codes
+	String BAD_REQUEST = "400";
+	String UNAUTHORIZED = "401";
+	String PAYMENT_REQUIRED = "402";
+	String FORBIDDEN = "403";
+	String NOT_FOUND = "404";
+	String METHOD_NOT_ALLOWED = "405";
+	String NOT_ACCEPTABLE = "406";
+	String PROXY_AUTHENTICATION_REQUIRED = "407";
+	String REQUEST_TIMEOUT = "408";
+	String CONFLICT = "409";
+	String GONE = "410";
+	String LENGTH_REQUIRED = "411";
+	String PRECONDITION_FAILED = "412";
+	String PAYLOAD_TO_LARGE = "413";
+	String REQUEST_URI_TOO_LONG = "414";
+	String UNSUPPORTED_MEDIA_TYPE = "415";
+	String REQUESTED_RANGE_NOT_STATISFIABLE = "416";
+	String EXPECTATION_FAILED = "417";
+	String I_M_A_TEAPOT = "418";
+	String MISDIREDTED_REQUEST = "421";
+	String UNPROCESSABLE_ENTITY = "422";
+	String LOCKED = "423";
+	String FAILED_DEPENDENCY = "424";
+	String UPGRADE_REQUIRED = "426";
+	String PRECONDITION_REQUIRED = "428";
+	String TOO_MANY_REQUESTS = "429";
+	String REQUEST_HEADER_FIELDS_TO_LARGE = "431";
+	String CONNECTION_CLOSED_WITHOUT_RESPONSE = "444";
+	String UNAVAILABLE_FOR_LEGAL_REASONS = "451";
+	String CLIENT_CLOSED_REQUEST = "499";
+	// 5×× Server Error Codes
+	String INTERNAL_SERVER_ERROR = "500";
+	String NOT_IMPLEMENTED = "501";
+	String BAD_GATEWAY = "502";
+	String SERVICE_UNAVAILABLE = "503";
+	String GATEWAY_TIMEOUT = "504";
+	String HTTP_VERSION_NOT_SUPPORTED = "505";
+	String VARIANT_ALSO_NEGOTIATES = "506";
+	String INSUFFICIENT_STORAGE = "507";
+	String LOOP_DETECTED = "508";
+	String NOT_EXTENDED = "510";
+	String NETWORK_AUTHENTICATION_REQUIRED = "511";
+	String NETWORK_CONNECT_TIMEOUT_ERROR = "599";
+	// 6×× Server Error Codes
+	String FORM_VALIDATION_ERROR = "600";
+//	String UNIQUE_EMAIL_ERROR="601";
+	String UNIQUE_MOBILE_ERROR = "602";
+	String PASSWORD_MATCH_ERROR = "603";
+	String TAGGING_ALREADY_PRESENT = "604";
+	String INVALID_USER_ID = "605";
+	String MAX_LOGIN_ATTEMPTS_FAIL = "606";
+	String LOGIN_ATTEMPTS_FAIL = "607";
+	String ACCOUNT_LOCKED = "608";
+	String INVALID_OTP_FAIL = "609";
+	String CHECKSUM_MATCH_ERROR = "610";
+	String DUPLICATE_TRANSACTION = "611";
+	String CLIENT_ID_NOT_MATCH = "612";
+	String MERCHANT_KEY_NOT_MATCH = "613";
+	String ACC_BLANK = "614";
+	String CCNB_RMS_SERVICE_DOWN = "615";
+	String SCHEDULE_NOT_ASSIGNED = "616";
+	String READING_COUNTER_EXCEEDED = "616";
+	String ACCOUNT_EXPIRED = "617";
+	// TCS CODE
+	String TXN_SUCCESS_CODE = "0300";
+	String TXN_PENDING_CODE = "0301";
+	String TXN_FAILURE_CODE = "0302";
+
+	String BILL_NOT_FOUND_CODE = "0401";
+	String INVALID_TRXN_AMT_CODE = "0402";
+	String INVALID_CHECKSUM_CODE = "0403";
+	String INVALID_VENDOR_CODE = "0404";
+	String INVALID_TXN_FOR_POSTING = "0405";
+	String BILL_ALREADY_PRESENT_CODE = "0406";
+	String PAYMENT_ALREADY_PRESENT_CODE = "0407";
+
+	String BILL_SCHEDULE_FOUND = "700";
+	String BILL_SCHEDULE_NOT_FOUND = "701";
+	String BILL_SCHEDULE_INPUT_IS_NULL = "702";
+	String LOGIN_TIME_EXPIRED = "703";
+
+	// ******************asif*****************/
+	String ALREADY_EXIST = "403";
+
+	/****
+	 * sandeep, 26-08-2022, starts
+	 * 
+	 *****/
+	String INVALID_CONSUMER_ID_CODE = "198";
+	/****
+	 * sandeep, 26-08-2022, ends
+	 * 
+	 *****/
+	
+	String INVALID_CONSUMER_PHONE_NUMBER = "901";
+
+	// charitra start code	
+    String CONSUMER_APPLICATION_NOT_FOUND="902";	
+//  charitra end code
+}

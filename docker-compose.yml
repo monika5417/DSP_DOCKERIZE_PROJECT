@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  deposit-scheme-app:
+    build: .
+    container_name: deposit_scheme_container
+    ports:
+      - "8083:8083"
+    environment:
+      # Active profile (dev/uat/prod)
+      SPRING_PROFILES_ACTIVE: dev
+      
+      # Oracle DB connection (aapke UAT config se)
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@172.24.200.184:1521:orcl
+      SPRING_DATASOURCE_USERNAME: deposite_schema
+      SPRING_DATASOURCE_PASSWORD: deposite_schema
+      
+      # Upload path container ke andar
+      UPLOAD_PATH: /app/uploads
+      
+      # Log file path
+      LOGGING_FILE_NAME: /app/logs/info.log
+      
+    volumes:
+      # Uploads aur logs ko host machine pe save karo
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+      
+    networks:
+      - app-network
+    
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge

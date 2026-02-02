@@ -1,0 +1,542 @@
+2026-02-02 07:12:33.279  WARN 1 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-02-02 07:12:33.806  INFO 1 --- [main] c.m.d.DepositSchemeApplication           : The following profiles are active: dev
+2026-02-02 07:12:42.120  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 07:12:46.421  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4280ms. Found 156 JPA repository interfaces.
+2026-02-02 07:12:49.330  INFO 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff428e57-a8cc-36d1-b1c0-8e3159befd83
+2026-02-02 07:12:49.984  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mpcz.deposit_scheme.feignClient.OytMaterialChargesClient1' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-02-02 07:12:49.988  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mpcz.deposit_scheme.feignClient.OytMaterialChargesClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-02-02 07:12:49.992  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mpcz.deposit_scheme.feignClient.SaveDataZeroOneCaseClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-02-02 07:12:50.008  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mpcz.deposit_scheme.feignClient.sendDataMeterReaderVijlanceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-02-02 07:12:52.129  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@305a0c5f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-02-02 07:12:52.182  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-02-02 07:12:55.014  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2026-02-02 07:12:55.168  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-02 07:12:55.170  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2026-02-02 07:13:08.231  INFO 1 --- [main] o.a.c.c.C.[.[.[/deposit_scheme]          : Initializing Spring embedded WebApplicationContext
+2026-02-02 07:13:08.234  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 34120 ms
+2026-02-02 07:13:10.027  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : ServicesHikariCP - Starting...
+2026-02-02 07:13:12.403  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : ServicesHikariCP - Start completed.
+2026-02-02 07:13:13.012  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 07:13:14.002  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2026-02-02 07:13:15.048  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2026-02-02 07:13:15.931  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2026-02-02 07:13:19.106  WARN 1 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.mpcz.deposit_scheme.backend.api.domain.Auditable.
+2026-02-02 07:13:35.121  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-02 07:13:35.155  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 07:13:39.301  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 07:13:56.423  INFO 1 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.lang.String com.mpcz.deposit_scheme.backend.api.services.impl.ConnectionPradayServiceImpl.postNscOytSSP
+2026-02-02 07:14:03.379 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 479 mappings in 'requestMappingHandlerMapping'
+2026-02-02 07:14:03.888  INFO 1 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2026-02-02 07:14:05.114  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@240f4328, org.springframework.security.web.context.SecurityContextPersistenceFilter@2453e3ce, org.springframework.security.web.header.HeaderWriterFilter@1065f09, org.springframework.security.web.authentication.logout.LogoutFilter@165e3835, com.mpcz.deposit_scheme.backend.api.jwt.security.filter.AuthenticationTokenFilter@32549c2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b10e470, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61140895, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cd8b2de, org.springframework.security.web.session.SessionManagementFilter@4219e848, org.springframework.security.web.access.ExceptionTranslationFilter@331d7260, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77d68b94]
+2026-02-02 07:14:06.115  WARN 1 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2026-02-02 07:14:06.149  WARN 1 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2026-02-02 07:14:06.167  INFO 1 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2026-02-02 07:14:06.207  WARN 1 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2026-02-02 07:14:06.207  INFO 1 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2026-02-02 07:14:06.938  INFO 1 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2026-02-02 07:14:07.067 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-02 07:14:07.563 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-02 07:14:07.631 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-02 07:14:08.039  INFO 1 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2026-02-02 07:14:08.957  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path '/deposit_scheme'
+2026-02-02 07:14:08.969  INFO 1 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2026-02-02 07:14:09.048  INFO 1 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2026-02-02 07:14:09.228  INFO 1 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2026-02-02 07:14:10.494  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllDuplicateRefundApplicationByApplicationNoUsingGET_1
+2026-02-02 07:14:10.847  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: jeLoadApplicationUsingPUT_1
+2026-02-02 07:14:10.856  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: jeLoadApplicationUsingPUT_2
+2026-02-02 07:14:11.227  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_1
+2026-02-02 07:14:11.355  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateConsumerApplicationSurveyDetailUsingPUT_1
+2026-02-02 07:14:11.480  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2026-02-02 07:14:11.733  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllFeederUsingGET_1
+2026-02-02 07:14:11.744  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveFeederUsingGET_1
+2026-02-02 07:14:11.798  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addDocumentTypeUsingPOST_1
+2026-02-02 07:14:11.807  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2026-02-02 07:14:11.858  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_2
+2026-02-02 07:14:12.003  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveDtrUsingGET_1
+2026-02-02 07:14:12.032  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_3
+2026-02-02 07:14:12.052  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllDCByDistrictUsingGET_1
+2026-02-02 07:14:12.059  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllDepartmentsUsingGET_1
+2026-02-02 07:14:12.071  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveDtrUsingGET_2
+2026-02-02 07:14:12.105  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_4
+2026-02-02 07:14:12.145  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_5
+2026-02-02 07:14:12.202  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_2
+2026-02-02 07:14:12.205  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2026-02-02 07:14:12.250  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllApplicationTypeUsingGET_1
+2026-02-02 07:14:12.261  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllCirclesByRegionUsingGET_1
+2026-02-02 07:14:12.273  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllDCBySubdivisonUsingGET_1
+2026-02-02 07:14:12.306  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllFeedersBySubstationUsingGET_1
+2026-02-02 07:14:12.435  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveApplicationTypeUsingGET_1
+2026-02-02 07:14:12.581  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveGetPassPdfUsingPOST_1
+2026-02-02 07:14:12.617  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_1
+2026-02-02 07:14:12.628  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_3
+2026-02-02 07:14:12.655  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getLoginOtpUsingPOST_1
+2026-02-02 07:14:12.658  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOtpUsingPOST_1
+2026-02-02 07:14:12.667  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: verifyLoginOtpUsingPOST_1
+2026-02-02 07:14:12.684  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingGET_1
+2026-02-02 07:14:12.687  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_6
+2026-02-02 07:14:12.689  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPUT_1
+2026-02-02 07:14:12.762  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_7
+2026-02-02 07:14:12.774  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveDtrUsingGET_3
+2026-02-02 07:14:12.795  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_8
+2026-02-02 07:14:12.803  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getConsumerApplicationDataFromView1UsingGET_1
+2026-02-02 07:14:12.942  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addRegionUsingPOST_1
+2026-02-02 07:14:12.957  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllRegionUsingGET_1
+2026-02-02 07:14:13.013  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllSchemeTypeUsingGET_1
+2026-02-02 07:14:13.054  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllDCByDistrictUsingGET_2
+2026-02-02 07:14:13.093  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllTariffCategoryUsingGET_1
+2026-02-02 07:14:13.107  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveAllTaskTypeUsingGET_1
+2026-02-02 07:14:13.139  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getBidNotParticipatedDocsUsingGET_1
+2026-02-02 07:14:13.151  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getQcConsumerbidUsingGET_1
+2026-02-02 07:14:13.167  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getErpDataUsingGET_1
+2026-02-02 07:14:13.175  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveFeederUsingGET_2
+2026-02-02 07:14:13.187  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllConsumerApplicationNewPaginationUsingGET_1
+2026-02-02 07:14:13.204  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: changePasswordUsingPOST_1
+2026-02-02 07:14:13.211  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: forgotPasswordUsingPOST_1
+2026-02-02 07:14:13.213  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getImageUsingGET_1
+2026-02-02 07:14:13.220  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserByMobileNoUsingGET_1
+2026-02-02 07:14:13.232  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserDetailsByIdUsingGET_1
+2026-02-02 07:14:13.246  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: retrieveUserUsingGET_1
+2026-02-02 07:14:13.322  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addConsumerApplicationAcceptanceOrRejectionDetailUsingPOST_1
+2026-02-02 07:14:13.331  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_2
+2026-02-02 07:14:13.335  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByApplicationNoUsingGET_1
+2026-02-02 07:14:13.337  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_4
+2026-02-02 07:14:13.352  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_9
+2026-02-02 07:14:13.366  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_5
+2026-02-02 07:14:13.381  INFO 1 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addWorkTypeUsingPOST_1
+2026-02-02 07:14:13.492  INFO 1 --- [main] c.m.d.DepositSchemeApplication           : Started DepositSchemeApplication in 107.84 seconds (JVM running for 111.476)
+2026-02-02 07:14:13.515  INFO 1 --- [scheduling-1] c.m.d.b.api.controller.AllScheduler      : Entering settlementDate method
+2026-02-02 07:14:13.524  INFO 1 --- [scheduling-1] c.m.d.b.api.controller.AllScheduler      : System IP Address: 172.18.0.2
+2026-02-02 07:14:13.528  INFO 1 --- [scheduling-1] c.m.d.b.api.controller.AllScheduler      : Request payload for BillDesk: {"mercid":"MPMKDSPLT","from_date":"20260201","to_date":"20260202"}
+2026-02-02 07:14:13.591 ERROR 1 --- [scheduling-1] c.m.d.b.api.controller.AllScheduler      : Exception occurred: 
+
+java.io.FileNotFoundException: C:\Billdesk Certificates\encrypt.billdesk.com\ServerCertificate.crt (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_482]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[na:1.8.0_482]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_482]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[na:1.8.0_482]
+	at com.mpcz.deposit_scheme.backend.api.jose.VerifyJWS.getPublicKey(VerifyJWS.java:36) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.encryptBilldeskData(AllScheduler.java:773) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.settlementDate(AllScheduler.java:636) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler$$FastClassBySpringCGLIB$$19d3953d.invoke(<generated>) [classes!/:0.0.1-SNAPSHOT]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.mpcz.deposit_scheme.aop.LoggingAspect.logAround(LoggingAspect.java:73) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_482]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_482]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler$$EnhancerBySpringCGLIB$$3a24a18e.settlementDate(<generated>) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_482]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_482]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_482]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_482]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_482]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_482]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_482]
+
+2026-02-02 07:14:13.593  INFO 1 --- [scheduling-1] c.m.d.b.api.controller.AllScheduler      : Exiting settlementDate method
+2026-02-02 07:14:13.958 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP GET https://qcportal.mpcz.in/tkc/bid_not_participated_docs
+2026-02-02 07:14:13.962 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2026-02-02 07:14:20.435 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:20.480 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:20.510 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=1184, schema=SCCW, consumerApplicationNo=SV1698298847791, deposit_amount=null, address=Pwd office campus sehore, kwload=null, consumer_mobile_no=9926390485, erp_no=71270, cgst=1184, estimate_name=01 No. 25 KVA X-Mer for kolipura to jhagariya square 11.4 KW street light New connection under sehore zone 01 O&M Dn. Sehore, supervision_amount=13153, is_bid_submitted=false, consumer_email_id=kunjilalshakya@gmail.com, shortDescriptionOfWork=New Connection HT 11 KV line  with 25 KVA Transformer for street light and High Mask light between kolipura to Jhagariya Square at Sehore , kvaload=null, consumerName=SDOPWDEMSEHORE}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:20.909 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:20.915 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:20.916 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=160318, schema=SCCW, consumerApplicationNo=SV2023091031, deposit_amount=null, address=79, Aakriti Garden, Nehru Nagar Bhopal, kwload=null, consumer_mobile_no=9203444444, erp_no=49157, cgst=160318, estimate_name=External Electrification of Sheetal Megacity dveloped by Shri Prabhakar Const. Co., supervision_amount=1781306, is_bid_submitted=false, consumer_email_id=manoj123@gmail.com, shortDescriptionOfWork=Applied for electrification of sheetal mega city phase 1 of 422 plots, kvaload=null, consumerName=Manoj Pradhan}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:21.242 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:21.243 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:21.245 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=5646, schema=SCCW, consumerApplicationNo=SV2023091646, deposit_amount=null, address=Public works department sehore , 466001, kwload=null, consumer_mobile_no=6265723071, erp_no=45581, cgst=5646, estimate_name=Estimate for Heinght Incressing of 33 KV, 11 KV & LT Road crossings at different locations from sujalpur highway to village maina hospital road under maina D/c of O&M Division Ashta., supervision_amount=62734, is_bid_submitted=false, consumer_email_id=sunita.dhurve01@gmail.com, shortDescriptionOfWork=Pole shifting and height raising of LT line, 11 KV Line , 33 KV line, & DTR Transformer due to construction of road from shujalpur highway to  prathmik swasthy kendra Maina, tehsil Ashta , Distt. Sehore, kvaload=null, consumerName=Mppwdenm}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:21.599 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:21.603 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:21.605 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=16172, schema=SCCW, consumerApplicationNo=SV2023081137, deposit_amount=null, address=Public works department sehore , 466001, kwload=null, consumer_mobile_no=6265723071, erp_no=29490, cgst=16172, estimate_name=Estimate for Line Shifting Ichhawar to Molga 1 to 6 KM Under Ichhawar Dc Under O&M Dn. Sehore, supervision_amount=179689, is_bid_submitted=false, consumer_email_id=sunita.dhurve01@gmail.com, shortDescriptionOfWork=Pole Shifting & Height raising of LT Line, 11 KV , 33 KV & DTR due to construction of CC Road From Ichhawar to Molga ( 1 to 6 KM) Under Ichhawar & Diwadiya dc at Ichhawar Dist Sehore, kvaload=null, consumerName=Mppwdenm}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:22.040 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:22.045 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:22.052 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=432056, schema=SCCW, consumerApplicationNo=SV1703311937636, deposit_amount=null, address=ist floor,tawa complex bittan market E-5 Arera colony,bhopal-16, kwload=null, consumer_mobile_no=9407361257, erp_no=53349, cgst=432056, estimate_name=Appl. Executive Engg. MPIDC Bhopal applied for External Electrification of "INDUSTRIAL PARK BERASIYA" at vil. Patalur-karariya on kh no.94,101-103,105-111,258,259,263-265,160/2/1,160/2/3 land 33.613 Hect under Berasiya D/c of O&M Dn Bhopal., supervision_amount=4800624, is_bid_submitted=false, consumer_email_id=eebhopal@mpidc.co.in, shortDescriptionOfWork=33 kva line erection from 132 grid ,internal electrification and 33/11kva sub station establishment, kvaload=null, consumerName=MPIDC}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:22.485 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:22.486 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:22.487 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=1730, schema=SCCW, consumerApplicationNo=SV1697543932097, deposit_amount=null, address=Baradwari Narsinghgarh, kwload=null, consumer_mobile_no=7987746581, erp_no=51467, cgst=1730, estimate_name=Estt. for Power supply to 01 no. 30 KW new connection at Narsinghgarh inder NGH U D/c O&M Dn. NGH, supervision_amount=19220, is_bid_submitted=false, consumer_email_id=sahuamar.97@gmail.com, shortDescriptionOfWork=Online 63KVA DTR on H Beam Support , kvaload=null, consumerName=NARMADA AMRUT DUDH SAGAR PRIVATE LTD}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:22.845 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:22.849 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:22.850 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=7061, schema=SCCW, consumerApplicationNo=SV2023091478, deposit_amount=null, address=249A durgesh vihar j.k road Bhopal, kwload=null, consumer_mobile_no=7000489071, erp_no=84473, cgst=7061, estimate_name=Revised Estt. for Shifting of 33/11 KV Line and height raising at Road crossing location and DTR for Sanchi NHAIRoad under Salamatpur D/c of O&M Dn. Raisen, supervision_amount=78461, is_bid_submitted=false, consumer_email_id=vikaskhare2929@gmail.com, shortDescriptionOfWork=NHAI SHIFTING WORK  ROAD PROJECT, VIDISHA TO HINOTIYA, kvaload=null, consumerName=Vikas khare}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:23.320 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:23.322 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:23.325 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=3534, schema=SCCW, consumerApplicationNo=SV1717404213307, deposit_amount=null, address=Office of the CMHO Sehore Distirct Sehore, kwload=null, consumer_mobile_no=7000590925, erp_no=110192, cgst=3534, estimate_name=Estimate for instalation 200 kva dtr For 65 kw NSC connection in CMHO OFFICE IN super vision scheme under sehore city zone 02 o&m dn sehore, supervision_amount=39262, is_bid_submitted=false, consumer_email_id=jayshreepatel550@gmail.com, shortDescriptionOfWork=Extention of 11 KV Line and installation of 200 KVA Transformer substation , kvaload=null, consumerName=CHIEF MEDICAL AND HEALTH OFFICER SEHORE}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:23.936 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:23.939 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:23.940 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=34040, schema=SCCW, consumerApplicationNo=SV1704887661471, deposit_amount=null, address=Office of EE Light machinery & E/M Division WRD sagar, kwload=null, consumer_mobile_no=9644785475, erp_no=30648, cgst=34040, estimate_name=An Application Received has been Latter No.526 dt.07/04/2023 from EE WRD sagar irrigation department  Electrification of rehabited colony near vill. Badoh of newely construction Hanota Dam under Kurwai D/c,, supervision_amount=378226, is_bid_submitted=false, consumer_email_id=eeemsgr@gmail.com, shortDescriptionOfWork=EXTERNAL ELECTRIFICATION OF COLONY DEVELOPING BY WRD GOVT OF MP FOR REHABILATED FAMILIES AFFECTED BY SUBMERGENCE OF HANOTA IRRIGATION PROJECT NEAR VILLAGE BADOH TEHSIL PATAHARI DIST VIDISHA, kvaload=850000, consumerName=ALOK KUMAR VAIDHYA}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:24.542 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:24.550 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:24.553 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=2669, schema=SCCW, consumerApplicationNo=SV1716284977304, deposit_amount=null, address=ABGAON KHURD HARDA, kwload=null, consumer_mobile_no=9098159926, erp_no=106921, cgst=2669, estimate_name=Estimate for installation of New 63 KVA DTR for 18 KW NDLF Permanent Connection for Morden Goverment College at village Abgaon Khurd under 5% Supervision Scheme under Harda North DC Under O&M Harda North Div.., supervision_amount=29655, is_bid_submitted=false, consumer_email_id=mam@gmail.com, shortDescriptionOfWork=18 KW NDLF CONNECTION 63KVA DTR FOR MORDEN DEGREE GOVT COLLEGE , ABGAON KHURD HARDA, kvaload=null, consumerName=MORDEN GOVT COLLEGE ABGAON}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:25.037 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:25.039 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:25.040 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=4529, schema=SCCW, consumerApplicationNo=SV1719470730672, deposit_amount=null, address=MAKHANNAGAR, kwload=null, consumer_mobile_no=9174451124, erp_no=120616, cgst=4529, estimate_name=Estimate for Installation of 100 KVA Xmer for 01 No 50 KW Govt.ITI Connection at village Sukkarwada under Ari D/c of O&M Dn Sohagpur, supervision_amount=50322, is_bid_submitted=false, consumer_email_id=govt1248@gmail.com, shortDescriptionOfWork=Estimate for instalation 100kva x-mer at village kuthariya under ari dc of o&m div sohagpur , kvaload=null, consumerName=GOVT ITI MAKHANNAGAR}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:25.478 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:25.484 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:25.491 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=1515, schema=SCCW, consumerApplicationNo=SV1709879688111, deposit_amount=null, address=KHASRA No 270, 273 AND 308, VILLAGE KANASAIYA, TEHSIL HUZUR, DISTRICT BHOPAL, kwload=null, consumer_mobile_no=9425006326, erp_no=108199, cgst=1515, estimate_name=Estt for Shifting of 33 KV Line vide Application no SV170987968811 dt 11.03.2024 of Smt Mausami Dixit on kh no 163/1, village Kanha Saiya under Sukhi Sewaniya D/c., supervision_amount=16830, is_bid_submitted=false, consumer_email_id=advo.dixit@gmail.com, shortDescriptionOfWork=EXISTING 33KV LINE IS PASSING OVER AGRICULTURE LAND HENCE WE WANT TO SHIFT THIS LINE AS SOON AS POSSIBLE., kvaload=null, consumerName=MOUSAMI DIXIT}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:25.931 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:25.932 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:25.933 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=17108, schema=SCCW, consumerApplicationNo=SV1704177795705, deposit_amount=null, address=S.D.O PWD E/M near sp office narmadapuram, kwload=null, consumer_mobile_no=9425683003, erp_no=86113, cgst=17108, estimate_name=Estimate for Shifting of 11 KV Line, LT Line, DTR & 33 KV Road Crossing,11 KV Crossing LT Crossing at Pipal chok to railway atation under Semriharchand D/c of O&M Dn Sohagpur, supervision_amount=190087, is_bid_submitted=false, consumer_email_id=ramankeerpwd@gmail.com, shortDescriptionOfWork=ESTIMTE FOR SHIFTING OF 11 KV LINE 33 KV LINE LT LINE DISTRIBUTION TRANSFORMER IN SEMRIHARCHAND DC UNDER O AND M DIVISION SOHAGPUR , kvaload=null, consumerName=S.D.O PWD E/M NARMADAPURAM}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:26.324 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:26.325 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:26.328 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=4941, schema=SCCW, consumerApplicationNo=SV1705997249515, deposit_amount=null, address=Sub Division Office PWD E/M Opposite district Hospital Raisen, kwload=null, consumer_mobile_no=9131025008, erp_no=84318, cgst=4941, estimate_name=Estt for Shifting/Height raising of 11 KV/LT Line on Semri River  Bridge at Mahuakheda Kala to Mehgawa Tappa Road  under Begumganj (R) D/c of O&M Dn. Raisen, supervision_amount=54905, is_bid_submitted=false, consumer_email_id=pankaj40sahu@gmail.com, shortDescriptionOfWork=Pole Shifting and Height Raising of 11KV Line on Semri River Bridge at Mahuakheda Kala to Mehgaon Tappa Road, Begumganj, Dist-Raisen, Under Begumganj D/c(R)., kvaload=null, consumerName=SDO PWD E and M RAISEN}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:26.746 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:26.752 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:26.753 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=1176, schema=SCCW, consumerApplicationNo=SV1715854410459, deposit_amount=null, address=BANKPURA TO JHADKIYA ROAD SHIFTING TEHSIL NARSINGGHARH, DIST. RAJGARH, MADHYA PRADESH, kwload=null, consumer_mobile_no=9407872834, erp_no=131861, cgst=1176, estimate_name=Estt. for Hight Raising of 11 KV Line at Bankpura to Jhadkiya Marg (Vill. Pratapura) under NGH R D/c O&M Dn. NGH, supervision_amount=13064, is_bid_submitted=false, consumer_email_id=eewrdngh@gmail.com, shortDescriptionOfWork=Kilometre from Bankpura to Jhadkiya. 01/08 Electric pole and line shifting at the high level bridge construction site at village Pratappura by PWD (Nirman Setu) Division Ujjain, kvaload=null, consumerName=SDO WRD NARSINGHGARH}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:27.301 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:27.302 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:27.304 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=3995, schema=SCCW, consumerApplicationNo=SV1725082264843, deposit_amount=null, address=CM RISE SCHOOL ABGAON KALAN, kwload=null, consumer_mobile_no=9575305447, erp_no=144908, cgst=3995, estimate_name=Estimate for the installation of 200 KVA DTR for 48 KW NDLF Connection for CM Rise School, Abgaon Kalan under 5% supervision scheme at Abgaon Kalan Under Harda North DC under O&M Harda North Division., supervision_amount=44384, is_bid_submitted=false, consumer_email_id=bhaiyu@gmail.com, shortDescriptionOfWork=external electrification of CM RISE SCHOOL ABGAON KALAN , 200KVA DTR, kvaload=null, consumerName=CM RISE SCHOOL ABGAON KALAN}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:27.833 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:27.870 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:27.901 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=2769, schema=SCCW, consumerApplicationNo=SV1709628152954, deposit_amount=null, address=NARMADAPURAM, kwload=null, consumer_mobile_no=9712975599, erp_no=129196, cgst=2769, estimate_name=Estimate for Shiifting 25 KVA Xmer & 11 KV Line from 11 KV Madanpur agri feeder of govt.high School Bhatgaon under Shobhapur D/c of O&M Dn Sohagpur, supervision_amount=30770, is_bid_submitted=false, consumer_email_id=dpepiu.hoshangabad@mp.gov.in, shortDescriptionOfWork=LINE SHIFTING WORK IN BHAT GAOV SOBHAPUR, kvaload=null, consumerName=KARYALAY KARYAPALAN YANTRI (BHAVAN) LOK NIRMAN BHIBHAG PIU  NARMADAPURAM}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:28.338 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:28.340 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:28.340 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=3266, schema=SCCW, consumerApplicationNo=SV1724566495443, deposit_amount=null, address=Khirkiya, kwload=null, consumer_mobile_no=9691750390, erp_no=143790, cgst=3266, estimate_name=Estimate for the installation of 200 KVA DTR for 48 KW NDLF Connection for CM Rise School under 5% supervision scheme at Khirkiya under O&M Harda North Division., supervision_amount=36291, is_bid_submitted=false, consumer_email_id=karyapalan010@gmail.com, shortDescriptionOfWork=5 % Supervision ¿¿¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿ , kvaload=null, consumerName=KARYAPALAN YANTRI BHAWAN HARDA}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:28.650 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:28.659 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:28.660 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=3706, schema=SCCW, consumerApplicationNo=SV1725023234463, deposit_amount=null, address=CM RISE SCHOOL KARTANA, kwload=null, consumer_mobile_no=6263524066, erp_no=144896, cgst=3706, estimate_name=Estimate for the installation of 200 KVA DTR for 48 KW NDLF Connection for CM Rise School, kartana under 5% supervision scheme at Kartana under O&M Harda South Division., supervision_amount=41176, is_bid_submitted=false, consumer_email_id=ballu1@gmail.com, shortDescriptionOfWork=CM RISE SCHOOL KARTANA external electrification work 200KVA DTR, kvaload=null, consumerName=CM RISE SCHOOL KARTANA}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:29.019 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:29.020 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:29.022 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=205573, schema=SCCW, consumerApplicationNo=SV1719838349512, deposit_amount=null, address=Office of EE Light machinery & E/M Division WRD sagar, kwload=null, consumer_mobile_no=9644785475, erp_no=31431, cgst=205573, estimate_name=Estimate for electrification of rehabited colony near Village Gondkhedi due to newely construction of Hanota Dam under Kurwai D/c, O&M Division Basoda., supervision_amount=2284144, is_bid_submitted=false, consumer_email_id=eeemsgr@gmail.com, shortDescriptionOfWork=EXTERNAL ELECTRIFICATION OF COLONY DEVELOPING BY WRD GOVT OF MP FOR REHABILATED FAMILIES AFFECTED BY SUBMERGENCE OF HANOTA IRRIGATION PROJECT NEAR VILLAGE GONDKHEDI TEHSIL PATAHARI DIST VIDISHA, kvaload=null, consumerName=ALOK KUMAR VAIDHYA}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:29.362 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:29.366 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:29.367 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=63461, schema=SCCW, consumerApplicationNo=SV1722854319293, deposit_amount=null, address=Office of EE Light machinery & E/M Division WRD sagar, kwload=null, consumer_mobile_no=9644785475, erp_no=30674, cgst=63461, estimate_name=Estimate for electrification of rehabited colony near village Jajpone due to construction Hanota Dam applied by EE WRD sagar irrigation department under Kurwai D/c, O&M Dn. Basoda., supervision_amount=705120, is_bid_submitted=false, consumer_email_id=eeemsgr@gmail.com, shortDescriptionOfWork=External Electrification of Rehabilated village persons in jajpon village affected by submergence of hanota dam project by Water resources dept govt of MP, kvaload=781150, consumerName=ALOK KUMAR VAIDHYA}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:29.747 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:29.749 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:29.751 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=594, schema=DEPOSITE, consumerApplicationNo=DS1728895731483, deposit_amount=132109, address=NCR Jhansi, kwload=null, consumer_mobile_no=9752425865, erp_no=895155, cgst=594, estimate_name=Estimate for Power supply 02 KW NDL LT connection at leval  crossing Gate No 457 near village Piparai under Hetampur D/c of (O&M) Morena-II, supervision_amount=6605, is_bid_submitted=false, consumer_email_id=varmadharmendar537@gmail.com, shortDescriptionOfWork=new  Connection , kvaload=null, consumerName=Senior DEEG NCR Jhansi}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:30.652 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:30.655 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:30.656 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=241, schema=DEPOSITE, consumerApplicationNo=DS1718877076620, deposit_amount=53568, address=Vijaypur Teh. Raghogarh Distt Guna, kwload=null, consumer_mobile_no=8860943829, erp_no=147758, cgst=241, estimate_name=Estimate for Installation of New LT Line for Prathmik Swasth kendra Vijaypur New Connection Purpose at Village Location Vijaypur under Ruthiyai Dc under O&M dn Raghogarh., supervision_amount=2678, is_bid_submitted=false, consumer_email_id=phcvijaypur3829@gmail.com, shortDescriptionOfWork=EXTENSION WORK, kvaload=null, consumerName=PHC Vijaypur}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:31.286 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:31.287 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:31.289 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=24294, schema=SCCW, consumerApplicationNo=SV1708518126975, deposit_amount=null, address=c/o babulal soni h.n- 04 satpur nager ward 36 bagdona betul-460449, kwload=null, consumer_mobile_no=9407516997, erp_no=153679, cgst=24294, estimate_name=Estimate for electrification of Panchwati Residency Kh. No. 105/1, 105/2, 105/3, 105/4, 105/5  & 107 colonizer Shri Mahesh Soni at Amla under Amla (T) Zone., supervision_amount=269932, is_bid_submitted=false, consumer_email_id=ankitsonibpl@rediffmail.com, shortDescriptionOfWork=external electrification of panchwati residency colony under amla (R) Dc under betul north div, kvaload=406300, consumerName=MAHESH SONI}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:32.183 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:32.185 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:32.186 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=2620, schema=SCCW, consumerApplicationNo=SV1722945497625, deposit_amount=null, address=Village jamani itarsi, kwload=null, consumer_mobile_no=9575484891, erp_no=138451, cgst=2620, estimate_name=estimate for 20 KW NDL Connection installation 63 KVA DTR for Hostle Building at Village Jamani under Pathrota D/C O&M div itarsi., supervision_amount=29113, is_bid_submitted=false, consumer_email_id=piupwd55@gmail.com, shortDescriptionOfWork=11 KV LINE AND 63 KVA DTR, kvaload=null, consumerName=KARYALAY KARYPALAN YANTRI BHAWAN LOK NIRMAN BIBHAG PIU}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:32.607 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:32.608 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:32.609 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=130207, schema=SCCW, consumerApplicationNo=DS1712561245199, deposit_amount=null, address=Global skill park Indrapuri Bhopal, kwload=null, consumer_mobile_no=9893040841, erp_no=17599, cgst=130207, estimate_name=External Electrification of Global Skill Park at Khasra No. 199,200,201,303,201,299/203,202,203,208,204,207,205,325/246,247 and 298/248 by Project Director under Anand Nagar zone of CIty Dn East MPMKVVCL CIty Circle Bhopal, supervision_amount=1446742, is_bid_submitted=false, consumer_email_id=gsp.mpsdp@gmail.com, shortDescriptionOfWork=The residential area of SSR-Global Skills Parl, Bhopal, kvaload=907375, consumerName=Global Skill Park samiti}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:33.186 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:33.188 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:33.189 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=72103, schema=SCCW, consumerApplicationNo=SV1718874609828, deposit_amount=null, address=Office of Section Officer, PWD E/M, Section Rajbhavan Bhopal, kwload=null, consumer_mobile_no=8989485119, erp_no=180200, cgst=72103, estimate_name=Estimate for Shifting of 11kv Taj Market feeder Line, DTR & LT line for construction of 4lane road from Royal Market to Taj Mahal palace road by PWD (Electical) Sub Div. M-01 Bhopal. under HTM CDN Bhopal, supervision_amount=801141, is_bid_submitted=false, consumer_email_id=ashudinkar@gmail.com, shortDescriptionOfWork=NEW 4 LANE RCC ROAD IS TO BE CONSTRUCTED FROM BOGDA PUL TO ROYAL MARKET IN PLACE OF EXISTING BITUMINOUS ROAD FOR WHICH ALLIED POLE SHIFTING WORK IS REQUIRED ONLY AT REQUIRED PLACES., kvaload=null, consumerName=Ashwani Kumar Dinkar}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:34.243 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:34.245 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:34.246 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=130206, schema=SCCW, consumerApplicationNo=SV1708587798222, deposit_amount=null, address=vill doraha post doraha teh shyampur dist sehore, kwload=null, consumer_mobile_no=7697139028, erp_no=113313, cgst=130206, estimate_name="Estimate for shifting/Height raising of 33 kv line 11kv line,DTR,LT line for Road widening from Jharkheda - Berasiya - Dholkhedi road widening Under Berasiya Sub Dn. of Onm Dn Bhopal.Application Number is SV1708587798222.", supervision_amount=1446736, is_bid_submitted=false, consumer_email_id=balrammandloi111@gmail.com, shortDescriptionOfWork=LT. DTR .11KV LINE,33 KV LINE SHIFT, kvaload=null, consumerName=shree man MAHAPRABHADAK bhartiye rastiye rajmarg vikasah pradhikarn}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:34.734 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:34.736 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:34.737 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=18365, schema=SCCW, consumerApplicationNo=SV1736317875652, deposit_amount=null, address=DRM Office, Nagpur, kwload=null, consumer_mobile_no=62329131472, erp_no=185489, cgst=18365, estimate_name=Estimate  for 33 KV Line shiffting work of 33 KV Feeder at Chikhali Khurd under Multai (R) dc, supervision_amount=204058, is_bid_submitted=false, consumer_email_id=bhujanganurag100@gmail.cpm, shortDescriptionOfWork=3 No. 33KV Line underground road crossing Near  Railway Bridge Chikhlikhurd, Multai, kvaload=null, consumerName=Dy CEEC Centeral Railway Nagpur}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:36.700 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:36.702 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:36.703 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=1956, schema=DEPOSITE, consumerApplicationNo=DS1721112318218, deposit_amount=434562, address=Pahargarh, kwload=null, consumer_mobile_no=9770900802, erp_no=129776, cgst=1956, estimate_name=Estimate for Load Enhancement 03 Kw. to 50 Kw. old connection No. N2098000165 for community Health center at village Pahargarh under Pahargarh D/c (O&M) Division Sabalgarh, supervision_amount=21728, is_bid_submitted=false, consumer_email_id=bpm.pah.mor@gmail.com, shortDescriptionOfWork=Load enhancement and exe work 100kva DTR by deposite scheme , kvaload=null, consumerName=The chief Medical Officer}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:37.339 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP POST https://qcportal.mpcz.in/tkc/get_consumer/
+2026-02-02 07:14:37.340 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2026-02-02 07:14:37.341 DEBUG 1 --- [scheduling-1] o.s.web.client.RestTemplate              : Writing [{sgst=982, schema=SCCW, consumerApplicationNo=SV1703829018704, deposit_amount=null, address=NAGAR PALIKA RAJGARH, kwload=null, consumer_mobile_no=9165005731, erp_no=90823, cgst=982, estimate_name=Est. for LT line shifting work CMO rajgarh (T) DC O&M Dn. Rajgarh, supervision_amount=10910, is_bid_submitted=false, consumer_email_id=cmonprgh@gmail.com, shortDescriptionOfWork=HT LINE SHIFTING NEAR RAJESHWAR CONVENT SCHOOL, kvaload=null, consumerName=CMO NAGAR PALIKA RAJGARH}] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2026-02-02 07:14:37.573 ERROR 1 --- [scheduling-1] c.mpcz.deposit_scheme.aop.LoggingAspect  : Exception in com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.RavindraSendDataForContractorSelectinonBYPoseMachine() with cause = {}
+
+javax.persistence.EntityNotFoundException: Unable to find com.mpcz.deposit_scheme.backend.api.domain.Consumer with id 131075
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:163) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:216) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:113) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1187) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.SessionImpl.internalLoad(SessionImpl.java:1052) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:697) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.type.EntityType.resolve(EntityType.java:464) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.type.ManyToOneType.resolve(ManyToOneType.java:240) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad$EntityResolver.lambda$static$0(TwoPhaseLoad.java:686) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntityEntryLoadedState(TwoPhaseLoad.java:276) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:184) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:153) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:1229) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:1006) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:964) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:350) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2887) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2869) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2701) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2696) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2142) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1163) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:173) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1533) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1581) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:409) ~[spring-orm-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sun.proxy.$Proxy372.getSingleResult(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor$QueryMethodInvoker.invoke(QueryExecutorMethodInterceptor.java:195) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:149) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sun.proxy.$Proxy186.findByConsumerApplicationNumber(Unknown Source) ~[na:na]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.lambda$RavindraSendDataForContractorSelectinonBYPoseMachine$1(AllScheduler.java:386) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[na:1.8.0_482]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647) ~[na:1.8.0_482]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.RavindraSendDataForContractorSelectinonBYPoseMachine(AllScheduler.java:383) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler$$FastClassBySpringCGLIB$$19d3953d.invoke(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.mpcz.deposit_scheme.aop.LoggingAspect.logAround(LoggingAspect.java:73) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_482]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_482]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) [spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler$$EnhancerBySpringCGLIB$$3a24a18e.RavindraSendDataForContractorSelectinonBYPoseMachine(<generated>) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_482]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_482]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) [spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_482]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_482]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_482]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_482]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_482]
+
+2026-02-02 07:14:37.586 ERROR 1 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.orm.jpa.JpaObjectRetrievalFailureException: Unable to find com.mpcz.deposit_scheme.backend.api.domain.Consumer with id 131075; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.mpcz.deposit_scheme.backend.api.domain.Consumer with id 131075
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:379) ~[spring-orm-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:257) ~[spring-orm-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528) ~[spring-orm-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:149) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sun.proxy.$Proxy186.findByConsumerApplicationNumber(Unknown Source) ~[na:na]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.lambda$RavindraSendDataForContractorSelectinonBYPoseMachine$1(AllScheduler.java:386) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[na:1.8.0_482]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647) ~[na:1.8.0_482]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler.RavindraSendDataForContractorSelectinonBYPoseMachine(AllScheduler.java:383) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler$$FastClassBySpringCGLIB$$19d3953d.invoke(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.mpcz.deposit_scheme.aop.LoggingAspect.logAround(LoggingAspect.java:73) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_482]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_482]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.mpcz.deposit_scheme.backend.api.controller.AllScheduler$$EnhancerBySpringCGLIB$$3a24a18e.RavindraSendDataForContractorSelectinonBYPoseMachine(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_482]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_482]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_482]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_482]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_482]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_482]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_482]
+Caused by: javax.persistence.EntityNotFoundException: Unable to find com.mpcz.deposit_scheme.backend.api.domain.Consumer with id 131075
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:163) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:216) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:113) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1187) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.SessionImpl.internalLoad(SessionImpl.java:1052) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:697) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.type.EntityType.resolve(EntityType.java:464) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.type.ManyToOneType.resolve(ManyToOneType.java:240) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad$EntityResolver.lambda$static$0(TwoPhaseLoad.java:686) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntityEntryLoadedState(TwoPhaseLoad.java:276) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:184) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.engine.internal.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:153) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:1229) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:1006) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:964) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:350) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2887) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2869) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2701) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2696) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2142) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1163) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:173) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1533) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1581) ~[hibernate-core-5.4.20.Final.jar!/:5.4.20.Final]
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_482]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_482]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:409) ~[spring-orm-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sun.proxy.$Proxy372.getSingleResult(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142) ~[spring-data-jpa-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor$QueryMethodInvoker.invoke(QueryExecutorMethodInterceptor.java:195) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.3.3.RELEASE.jar!/:2.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	... 48 common frames omitted
+
+2026-02-02 07:14:50.085  INFO 1 --- [http-nio-8083-exec-2] o.a.c.c.C.[.[.[/deposit_scheme]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-02 07:14:50.096  INFO 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-02 07:14:50.098 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-02 07:14:50.178 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-02 07:14:50.183  INFO 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 86 ms
+2026-02-02 07:14:51.063 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/deposit_scheme/error", parameters={}
+2026-02-02 07:14:51.174 DEBUG 1 --- [http-nio-8083-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2026-02-02 07:14:51.684 DEBUG 1 --- [http-nio-8083-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2026-02-02 07:14:51.750 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2026-02-02 07:15:44.912 DEBUG 1 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/deposit_scheme/error", parameters={}
+2026-02-02 07:15:44.960 DEBUG 1 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2026-02-02 07:15:44.979 DEBUG 1 --- [http-nio-8083-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2026-02-02 07:15:44.983 DEBUG 1 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2026-02-02 07:15:59.966 DEBUG 1 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/api/refundAmount/getPaymentRefundDetails/SV1758002966095/1", parameters={}
+2026-02-02 07:15:59.999 DEBUG 1 --- [http-nio-8083-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mpcz.deposit_scheme.backend.api.controller.RefundAmountController#getPaymentRefundDetails(String, Long)
+2026-02-02 07:16:07.089 DEBUG 1 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:07.092 DEBUG 1 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.mpcz.deposit_scheme.backend.api.response.Response@60755967]
+2026-02-02 07:16:07.121 DEBUG 1 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:32.844 DEBUG 1 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/swagger-ui.html", parameters={}
+2026-02-02 07:16:32.882 DEBUG 1 --- [http-nio-8083-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2026-02-02 07:16:32.928 DEBUG 1 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:33.076 DEBUG 1 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2026-02-02 07:16:33.104 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2026-02-02 07:16:33.150 DEBUG 1 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2026-02-02 07:16:33.155 DEBUG 1 --- [http-nio-8083-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:33.162 DEBUG 1 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2026-02-02 07:16:33.186 DEBUG 1 --- [http-nio-8083-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:33.198 DEBUG 1 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2026-02-02 07:16:33.246 DEBUG 1 --- [http-nio-8083-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:33.264 DEBUG 1 --- [http-nio-8083-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:33.276 DEBUG 1 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:33.278 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:33.316 DEBUG 1 --- [http-nio-8083-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:33.440 DEBUG 1 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:33.471 DEBUG 1 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:33.648 DEBUG 1 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:33.956 DEBUG 1 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/swagger-resources/configuration/ui", parameters={}
+2026-02-02 07:16:33.971 DEBUG 1 --- [http-nio-8083-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2026-02-02 07:16:33.976 DEBUG 1 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+2026-02-02 07:16:34.002 DEBUG 1 --- [http-nio-8083-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:34.039 DEBUG 1 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:34.089 DEBUG 1 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:34.098 DEBUG 1 --- [http-nio-8083-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.UiConfiguration@10ccbaab]
+2026-02-02 07:16:34.117 DEBUG 1 --- [http-nio-8083-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:34.164 DEBUG 1 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/swagger-resources/configuration/security", parameters={}
+2026-02-02 07:16:34.167 DEBUG 1 --- [http-nio-8083-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2026-02-02 07:16:34.196 DEBUG 1 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:34.200 DEBUG 1 --- [http-nio-8083-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.SecurityConfiguration@2600673e]
+2026-02-02 07:16:34.221 DEBUG 1 --- [http-nio-8083-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:34.263 DEBUG 1 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/swagger-resources", parameters={}
+2026-02-02 07:16:34.266 DEBUG 1 --- [http-nio-8083-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2026-02-02 07:16:34.283 DEBUG 1 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:34.295 DEBUG 1 --- [http-nio-8083-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@1d4256a1]]
+2026-02-02 07:16:34.303 DEBUG 1 --- [http-nio-8083-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:34.441 DEBUG 1 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/deposit_scheme/error", parameters={}
+2026-02-02 07:16:34.455 DEBUG 1 --- [http-nio-8083-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-02 07:16:34.443 DEBUG 1 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/v2/api-docs", parameters={}
+2026-02-02 07:16:34.459 DEBUG 1 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:34.534 DEBUG 1 --- [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Feb 02 07:16:34 GMT 2026, status=401, error=Unauthorized, message=, path=/deposit_sch (truncated)...]
+2026-02-02 07:16:34.509 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2026-02-02 07:16:34.513 DEBUG 1 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2026-02-02 07:16:34.556 DEBUG 1 --- [http-nio-8083-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:34.569 DEBUG 1 --- [http-nio-8083-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:34.619 DEBUG 1 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:34.572 DEBUG 1 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2026-02-02 07:16:34.668 DEBUG 1 --- [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:34.671 DEBUG 1 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/deposit_scheme/error", parameters={}
+2026-02-02 07:16:34.700 DEBUG 1 --- [http-nio-8083-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-02 07:16:34.714 DEBUG 1 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:34.740 DEBUG 1 --- [http-nio-8083-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Feb 02 07:16:34 GMT 2026, status=401, error=Unauthorized, message=, path=/deposit_sch (truncated)...]
+2026-02-02 07:16:34.760 DEBUG 1 --- [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2026-02-02 07:16:36.079 DEBUG 1 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-02-02 07:16:36.092 DEBUG 1 --- [http-nio-8083-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@66798ec2]
+2026-02-02 07:16:36.173 DEBUG 1 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:36.832 DEBUG 1 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2026-02-02 07:16:36.834 DEBUG 1 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/deposit_scheme/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2026-02-02 07:16:36.846 DEBUG 1 --- [http-nio-8083-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:36.861 DEBUG 1 --- [http-nio-8083-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2026-02-02 07:16:36.888 DEBUG 1 --- [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-02 07:16:36.906 DEBUG 1 --- [http-nio-8083-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

@@ -1,0 +1,15 @@
+target/
+!target/deposit_scheme.war
+.git
+.gitignore
+*.md
+.idea
+.vscode
+.DS_Store
+*.iml
+.settings
+.classpath
+.project
+logs/
+uploads/
+*.log
